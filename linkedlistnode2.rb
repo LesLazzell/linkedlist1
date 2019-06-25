@@ -49,11 +49,11 @@ def infinite_list?(list_node)
   head = tail.next_node
   while tail.value != head.value
     head = head.next_node
-    lam +=1
+    lam += 1
   end
-
+# puts "mu: #{mu}, #{lam}"
   return mu, lam
-rescue NoMethodError
+  rescue NoMethodError
   false
 end
 alias :repetition_params :infinite_list?
