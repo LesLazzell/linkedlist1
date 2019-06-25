@@ -28,13 +28,7 @@ end
     def push(value)
         @data = LinkedListNode.new(value, @data)
     end
-  
-    # Pop an item off the stack.
-    # Remove the last item that was pushed onto the
-    # stack and return the value to the user
-    def pop
-        # I RETURN A VALUE ????????
-    end
+
   
   end
   
@@ -56,7 +50,7 @@ end
   print_values(node3)
 
 puts "-------"
-
+# puts stack.data
 revlist = reverse_list(node3)
 
 print_values(revlist)
